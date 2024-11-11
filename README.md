@@ -117,6 +117,7 @@ To handle the Markdown conversion, the application uses the `markdown2` library 
 
 # File Structure
 The project is organized as follows:
+```bash
 wiki-encyclopedia/
 ├── encyclopedia/
 │   ├── migrations/
@@ -141,10 +142,11 @@ wiki-encyclopedia/
 ├── manage.py
 ├── requirements.txt
 └── README.md
+```
 ## entries/ Folder
 This folder contains all the Markdown files for the encyclopedia entries. Each file should be named as the title of the entry (e.g., JavaScript.md).
 
 ## Util Functions (util.py)
-"list_entries()": Returns a list of all entry titles.
-"get_entry(title)": Returns the content of a specific entry based on its title. If the file doesn't exist, it returns None.
+**list_entries()**: Returns a list of all entry titles.
+**get_entry(title)**: Returns the content of a specific entry based on its title. If the file doesn't exist, it returns None.
 
