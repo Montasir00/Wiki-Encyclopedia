@@ -1,0 +1,203 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Code block styling */
+code {
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 240px;
+}
+
+.sidebar h2 {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Search bar inside sidebar */
+.search {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Sidebar Navigation Links */
+.sidebar a {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.sidebar a:hover {
+    background-color: #007bff;
+    padding-left: 10px;
+}
+
+/* Sidebar bottom links */
+.sidebar .footer {
+    margin-top: 20px;
+    color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+/* Main Content Section */
+.main {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* List of Entries */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons and other elements */
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .sidebar a {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}

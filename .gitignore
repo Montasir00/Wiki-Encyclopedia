@@ -1,0 +1,15 @@
+# Ignore the collected static files (from `collectstatic`)
+staticfiles/
+
+# Ignore environment settings or temporary files
+*.pyc
+__pycache__/
+db.sqlite3
+venv/
+env/
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore sensitive files like .env
+.env
