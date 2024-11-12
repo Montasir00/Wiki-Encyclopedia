@@ -15,7 +15,6 @@ This simple Django-based web application allows users to create, view, and searc
 - **Django**: Web framework for building the application.
 - **Python**: Programming language used for backend development.
 - **HTML/CSS**: For front-end design and structure.
-- **JavaScript (optional)**: For potential interactive features.
 - **Markdown**: Content format for entries.
 - **markdown2**: (Optional) Used for Markdown to HTML conversion.
 
@@ -36,11 +35,7 @@ Before you begin, ensure you have the following installed on your local machine:
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
-Install dependencies using pip:
-```bash
-Copy code
-pip install -r requirements.txt
-```
+Install dependencies using pip
 Install markdown2 for Markdown to HTML conversion (if using Option 1):
 ```bash
 Copy code
@@ -62,15 +57,15 @@ Open the application in your web browser by navigating to http://127.0.0.1:8000/
 1. **Clone the repository** to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/wiki-encyclopedia.git
-   cd wiki-encyclopedia
+   [   git clone https://github.com/your-username/wiki-encyclopedia.git
+   cd wiki-encyclopedia](https://github.com/Montasir00/Wiki-Encyclopedia.git)
    ```
    Application Overview
 1. Home Page (index.html)
 The home page displays a list of all available entries. Users can click on any entry to view its details. The sidebar contains links to the home page, create new pages, and a random page feature.
 
 2. Search Results (search_results.html)
-The search bar in the sidebar allows users to search for entries by title. The results are displayed as a list of matching entries. If a match is found, the user is redirected to the entry’s page.
+The sidebar's search bar allows users to search for entries by title. The results are displayed as a list of matching entries. If a match is found, the user is redirected to the entry’s page.
 
 3. Entry Page (entry.html)
 Each entry is displayed on a separate page. If the content is in Markdown format, it is converted to HTML using markdown2 or a custom Markdown-to-HTML converter. This allows the content to be rendered properly.
@@ -82,7 +77,7 @@ Users can create a new entry by entering a title and content in Markdown format.
 Clicking the "Random Page" link will redirect the user to a randomly selected entry in the encyclopedia.
 
 Markdown to HTML Conversion
-To handle the Markdown conversion, the application uses the markdown2 library (or a custom function). Markdown syntax is processed into corresponding HTML tags for proper rendering, including:
+The application uses the markdown2 library (or a custom function) to handle the Markdown conversion. Markdown syntax is processed into corresponding HTML tags for proper rendering, including:
 
 Headings: ## Heading becomes <h2>Heading</h2>
 Bold text: **Bold** becomes <strong>Bold</strong>
